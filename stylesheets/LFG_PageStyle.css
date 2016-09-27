@@ -1,0 +1,402 @@
+ /********************************
+        TOPMENUX
+*********************************/
+        #topmenu {
+    background-color: #fff;
+    height: 52px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+        }
+        .submenu {
+          background-color: #111 !important;
+        }
+        #kvtopmenu,
+        #kvtopmenu ul,
+        #kvtopmenu ul li,
+        #kvtopmenu ul li a,
+        #kvtopmenu #menu-button {
+          margin: 0;
+          padding: 0;
+          border: 0;
+          list-style: none;
+          line-height: 1;
+          display: block;
+          position: relative;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+        #kvtopmenu:after,
+        #kvtopmenu > ul:after {
+          content: ".";
+          display: block;
+          clear: both;
+          visibility: hidden;
+          line-height: 0;
+          height: 0;
+        }
+        #kvtopmenu #menu-button {
+          display: none;
+        }
+        #kvtopmenu {
+			background: none repeat scroll 0 0 #ffffff;
+			display: inline-block;
+			font-family: "Open Sans",sans-serif;
+			line-height: 1;
+			margin: 0 auto;
+        }
+        #menu-line {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 3px;
+          background: #009ae1;
+          -webkit-transition: all 0.25s ease-out;
+          -moz-transition: all 0.25s ease-out;
+          -ms-transition: all 0.25s ease-out;
+          -o-transition: all 0.25s ease-out;
+          transition: all 0.25s ease-out;
+        }
+        #kvtopmenu > ul > li {
+          float: left;
+        }
+        #kvtopmenu.align-center > ul {
+          font-size: 0;
+          text-align: center;
+        }
+        #kvtopmenu.align-center > ul > li {
+          display: inline-block;
+          float: none;
+        }
+        #kvtopmenu.align-center ul ul {
+          text-align: left;
+        }
+        #kvtopmenu.align-right > ul > li {
+          float: right;
+        }
+        #kvtopmenu.align-right ul ul {
+          text-align: right;
+        }
+        #kvtopmenu > ul > li > a {
+          padding: 20px;
+          font-size: 12px;
+          text-decoration: none;
+          text-transform: uppercase;
+          color: #000;
+          -webkit-transition: color .2s ease;
+          -moz-transition: color .2s ease;
+          -ms-transition: color .2s ease;
+          -o-transition: color .2s ease;
+          transition: color .2s ease;
+        }
+        #kvtopmenu > ul > li:hover > a,
+        #kvtopmenu > ul > li.active > a {
+          color: #009ae1;
+        }
+        #kvtopmenu > ul > li.has-sub > a {
+          padding-right: 25px;
+        }
+        #kvtopmenu > ul > li.has-sub > a::after {
+          position: absolute;
+          top: 21px;
+          right: 10px;
+          width: 4px;
+          height: 4px;
+          border-bottom: 1px solid #000;
+          border-right: 1px solid #000;
+          content: "";
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+          -webkit-transition: border-color 0.2s ease;
+          -moz-transition: border-color 0.2s ease;
+          -ms-transition: border-color 0.2s ease;
+          -o-transition: border-color 0.2s ease;
+          transition: border-color 0.2s ease;
+        }
+        #kvtopmenu > ul > li.has-sub:hover > a::after {
+          border-color: #009ae1;
+        }
+        #kvtopmenu ul ul {
+          position: absolute;
+          left: -9999px;
+        }
+        #kvtopmenu li:hover > ul {
+          left: auto;
+        }
+        #kvtopmenu.align-right li:hover > ul {
+          right: 0;
+        }
+        #kvtopmenu ul ul ul {
+          margin-left: 100%;
+          top: 0;
+        }
+        #kvtopmenu.align-right ul ul ul {
+          margin-left: 0;
+          margin-right: 100%;
+        }
+        #kvtopmenu ul ul li {
+          height: 0;
+          -webkit-transition: height .2s ease;
+          -moz-transition: height .2s ease;
+          -ms-transition: height .2s ease;
+          -o-transition: height .2s ease;
+          transition: height .2s ease;
+        }
+        #kvtopmenu ul li:hover > ul > li {
+          height: 32px;
+        }
+        #kvtopmenu ul ul li a {
+          padding: 10px 20px;
+          width: 160px;
+          font-size: 12px;
+          background: #333;
+          text-decoration: none;
+          color: #ddd;
+          -webkit-transition: color .2s ease;
+          -moz-transition: color .2s ease;
+          -ms-transition: color .2s ease;
+          -o-transition: color .2s ease;
+          transition: color .2s ease;
+        }
+        #kvtopmenu ul ul li:hover > a,
+        #kvtopmenu ul ul li a:hover {
+          color: #fff;
+        }
+        #kvtopmenu ul ul li.has-sub > a::after {
+          position: absolute;
+          top: 13px;
+          right: 10px;
+          width: 4px;
+          height: 4px;
+          border-bottom: 1px solid #ddd;
+          border-right: 1px solid #ddd;
+          content: "";
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+          -webkit-transition: border-color 0.2s ease;
+          -moz-transition: border-color 0.2s ease;
+          -ms-transition: border-color 0.2s ease;
+          -o-transition: border-color 0.2s ease;
+          transition: border-color 0.2s ease;
+        }
+        #kvtopmenu.align-right ul ul li.has-sub > a::after {
+          right: auto;
+          left: 10px;
+          border-bottom: 0;
+          border-right: 0;
+          border-top: 1px solid #ddd;
+          border-left: 1px solid #ddd;
+        }
+        #kvtopmenu ul ul li.has-sub:hover > a::after {
+          border-color: #fff;
+        }
+        @media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+          #kvtopmenu {
+            width: 100%;
+          }
+          #kvtopmenu ul {
+            width: 100%;
+            display: none;
+          }
+          #kvtopmenu.align-center > ul,
+          #kvtopmenu.align-right ul ul {
+            text-align: left;
+          }
+          #kvtopmenu ul li,
+          #kvtopmenu ul ul li,
+          #kvtopmenu ul li:hover > ul > li {
+            width: 100%;
+            height: auto;
+            border-top: 1px solid rgba(120, 120, 120, 0.15);
+          }
+          #kvtopmenu ul li a,
+          #kvtopmenu ul ul li a {
+            width: 100%;
+          }
+          #kvtopmenu > ul > li,
+          #kvtopmenu.align-center > ul > li,
+          #kvtopmenu.align-right > ul > li {
+            float: none;
+            display: block;
+          }
+          #kvtopmenu ul ul li a {
+            padding: 20px 20px 20px 30px;
+            font-size: 12px;
+            color: #000;
+            background: none;
+          }
+          #kvtopmenu ul ul li:hover > a,
+          #kvtopmenu ul ul li a:hover {
+            color: #000;
+          }
+          #kvtopmenu ul ul ul li a {
+            padding-left: 40px;
+          }
+          #kvtopmenu ul ul,
+          #kvtopmenu ul ul ul {
+            position: relative;
+            left: 0;
+            right: auto;
+            width: 100%;
+            margin: 0;
+          }
+          #kvtopmenu > ul > li.has-sub > a::after,
+          #kvtopmenu ul ul li.has-sub > a::after {
+            display: none;
+          }
+          #menu-line {
+            display: none;
+          }
+          #kvtopmenu #menu-button {
+            display: block;
+            padding: 20px;
+            color: #000;
+            cursor: pointer;
+            font-size: 12px;
+            text-transform: uppercase;
+          }
+          #kvtopmenu #menu-button::after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: block;
+            width: 15px;
+            height: 2px;
+            background: #000;
+          }
+          #kvtopmenu #menu-button::before {
+            content: '';
+            position: absolute;
+            top: 25px;
+            right: 20px;
+            display: block;
+            width: 15px;
+            height: 3px;
+            border-top: 2px solid #000;
+            border-bottom: 2px solid #000;
+          }
+          #kvtopmenu .submenu-button {
+            position: absolute;
+            z-index: 10;
+            right: 0;
+            top: 0;
+            display: block;
+            border-left: 1px solid rgba(120, 120, 120, 0.15);
+            height: 52px;
+            width: 52px;
+            cursor: pointer;
+          }
+          #kvtopmenu .submenu-button::after {
+            content: '';
+            position: absolute;
+            top: 21px;
+            left: 26px;
+            display: block;
+            width: 1px;
+            height: 11px;
+            background: #000;
+            z-index: 99;
+          }
+          #kvtopmenu .submenu-button::before {
+            content: '';
+            position: absolute;
+            left: 21px;
+            top: 26px;
+            display: block;
+            width: 11px;
+            height: 1px;
+            background: #000;
+            z-index: 99;
+          }
+          #kvtopmenu .submenu-button.submenu-opened:after {
+            display: none;
+          }
+        }
+        /********************************
+        MENU CSS END
+        *********************************/
+        /********************************
+        CONNECTIONS CSS
+        *********************************/
+        .sub-header {
+          background-color: #fff;
+          display: block;
+          height: 90px;
+        }
+        .connections {
+          display: inline-block;
+          height: 90px;
+          margin: 0 auto;
+        }
+        .connect {
+          display: block;
+          height: 0;
+          overflow: hidden;
+          padding: 64px 0 0;
+          width: 64px;
+        }
+        .connections li {
+          display: block;
+          float: left;
+          margin-right: 6px;
+          margin-top: 14px;
+        }
+        .connections li:hover {
+          opacity: 0.75;
+        }
+        .linkedin {
+          background: url("https://googledrive.com/host/0B117gOj-yULneHp2aTJDeGpGUXM") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+          height: 64px;
+          width: 64px;
+        }
+        .twitter {
+          background: url("https://googledrive.com/host/0B117gOj-yULnekJPbTlGc0V5RnM") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+          height: 64px;
+          width: 64px;
+        }
+        .behance {
+          background: url("https://googledrive.com/host/0B117gOj-yULnbFptZWtFY1Z6Tm8") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+          height: 64px;
+          width: 64px;
+        }
+        /********************************
+        CONNECTIONS CSS END
+        *********************************/
+		
+		/* Page C S S */
+	
+#header {
+    display: none;
+}
+.main-wrapper {
+    float: none;
+    max-width: none;
+}
+.post-header {
+    background-color: #e6e7e8;
+    padding: 0;
+}
+.post .entry-content {
+    border-color: transparent;
+    border-radius: 0;
+    border-width: 0;
+}
+h1.post_title {
+    margin: 0 0 2px;
+    padding: 0 0 2px;
+}
+#comments .inner {
+    background-color: transparent;
+    padding: 0;
+}
+.sidebar-wrapper {
+    display: none;
+}
