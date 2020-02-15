@@ -150,12 +150,6 @@ position: relative;
 
 /* PosT C S S */
 
-.post {
-background: transparent;
-    margin: 0 6px 16px;
-    width: 306px;
-}
-
 .post .entry-content {
     background: none repeat scroll 0 0 transparent;
     width: auto;
