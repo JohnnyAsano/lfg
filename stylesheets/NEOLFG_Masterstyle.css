@@ -21,7 +21,7 @@ i,cite{font-style:italic}
 ::selection {  background: #2EB0EC;  color: #fff;  }
 ::-moz-selection {  background: #333;  color: #fff;  }
 a img{	border: none;}
-ol, ul { padding: 10px 0 20px;  text-align: left;  }
+ol, ul {  }
 ol li { list-style-type: decimal;  padding:0 0 5px;  }
 ul li { padding: 0 0 5px;  }
 ul ul, ol ol { padding: 0; }
