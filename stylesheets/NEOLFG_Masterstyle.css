@@ -79,11 +79,6 @@ font-size:15px;
 .ct-wrapper:before,.ct-wrapper:after{content:"\0020";display:block;height:0;overflow:hidden}
 .ct-wrapper:after{clear:both}
 
-.logo-main {
-height: auto;
-padding-bottom: 10px;
-padding-top: 30px;
-}
 
 .ct-wrapper{
 position:relative;
