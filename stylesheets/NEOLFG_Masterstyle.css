@@ -59,7 +59,7 @@ a, img, #load-more {
 transition: background-color .1s linear, color .1s linear;
 }
 
-img{
+.thumbnail{
 border-top-left-radius: 7px;
 border-top-right-radius: 7px;
 vertical-align:bottom;
