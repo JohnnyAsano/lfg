@@ -251,14 +251,11 @@ background: #333 url(http://4.bp.blogspot.com/-kVN6E9Nyytk/U1AmS342cjI/AAAAAAAAF
 color: #aaa;
 font-size: 11px;
 }
+
 #footer-widgets {
 max-width: 900px;
 margin: 0 auto;
 padding: 30px 0 0;
-}
-
-#footer-1 {
-margin-left: 0;
 }
 
 .footer-widget .widget h2 {
